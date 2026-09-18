@@ -46,7 +46,7 @@ const renderBlocksInList = () => {
     }
 }
 
-const selectCategory = (category2) => {
+window.selectCategory = (category2) => {
     category = category2
     renderBlocksInList
 }
