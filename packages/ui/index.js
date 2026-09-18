@@ -1,7 +1,10 @@
 import { root, resultProject } from "./dom.js";
+import { UIButton } from "./ui-classes.js";
 import Vm from "../vm/index.js";
 
 let category = ""
+
+const menuButton1 = new UIButton("Add block")
 
 root.innerHTML = `
     <h1 style="text-align: center">App Constructor</h1>
@@ -13,8 +16,9 @@ root.innerHTML = `
         <option value="console">Console</option>
     </select><button onclick="selectCategory(document.getElementById('category').value)">Select</button></p>
     <p>Block: <select id="block">
-        <option>No Blocks</option>
+        <option>Select category</option>
     </select></p>
+    ${menuButton1.toString()}<button>Save project</button><button>Package project</button
 `
 
 resultProject.innerHTML = `
@@ -42,6 +46,20 @@ const renderBlocksInList = () => {
         case "dom":
             document.getElementById("block").innerHTML = `
                 <option value="dom_getBody">Get Body</option>
+                <option value="dom_createElement">Create element</option>
+            `
+        case "events":
+            document.getElementById("block").innerHTML = `
+                <option>No blocks</option>
+            `
+        case "managment":
+            document.getElementById("block").innerHTML = `
+                <option>No blocks</option>
+            `
+        case "operators":
+            document.getElementById("block").innerHTML = `
+                <option value="operators_plus">Plus</option>
+                <option value="operators_minus">Minus</option>
             `
     }
 }

@@ -1,12 +1,18 @@
 import { DomElement } from "./src/types.js";
 import ExtensionDOM from "./src/blocks/dom.js";
+import ExtensionOperators from "./src/blocks/operators.js";
 
 const blocks = {
-    DOM: new ExtensionDOM().blocks
+    DOM: new ExtensionDOM().blocks,
+    operators: new ExtensionOperators().blocks
 }
 
 const blockMap = {
-    "dom_getBody": blocks.DOM.getBody
+    "dom_getBody": blocks.DOM.getBody,
+    "dom_createElement": blocks.DOM.createElment,
+
+    "operators_plus": blocks.operators.plus,
+    "operators_minus": blocks.operators.minus
 }
 
 class Vm {
@@ -14,6 +20,10 @@ class Vm {
         this.DomElement = DomElement
         this.blocks = blocks
         this.blockMap = blockMap
+        this.categories = {
+            dom: ExtensionDOM,
+            operators: ExtensionOperators
+        }
     }
 }
 
