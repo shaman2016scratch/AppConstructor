@@ -6,7 +6,7 @@ class UIButton {
     }
 
     toString () {
-        return `<button>${label}</button>`
+        return `<button>${this.label}</button>`
     }
 }
 
