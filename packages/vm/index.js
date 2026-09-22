@@ -10,6 +10,10 @@ const blocks = {
     operators: new ExtensionOperators().blocks
 }
 
+const reporters = {
+    DOM: new ExtensionDOM().reporters
+}
+
 const blockMap = {
     "dom_getBody": blocks.DOM.getBody,
     "dom_createElement": blocks.DOM.createElment,
@@ -17,6 +21,8 @@ const blockMap = {
     "operators_plus": blocks.operators.plus,
     "operators_minus": blocks.operators.minus
 }
+
+const reporterMap = {}
 
 class Vm {
     constructor () {
@@ -28,6 +34,8 @@ class Vm {
             operators: ExtensionOperators
         }
         this.extensionAPI = ExtensionsAPI
+        this.reporters = reporters
+        this.reporterMap = reporterMap
     }
 }
 
