@@ -1,6 +1,9 @@
 import { DomElement } from "./src/types.js";
+
 import ExtensionDOM from "./src/blocks/dom.js";
 import ExtensionOperators from "./src/blocks/operators.js";
+
+import ExtensionsApi from "./src/util/extensions-api.js";
 
 const blocks = {
     DOM: new ExtensionDOM().blocks,
@@ -24,6 +27,7 @@ class Vm {
             dom: ExtensionDOM,
             operators: ExtensionOperators
         }
+        this.extensionAPI = ExtensionsAPI
     }
 }
 
