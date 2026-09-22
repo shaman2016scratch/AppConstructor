@@ -69,6 +69,6 @@ const renderBlocksInList = () => {
 }
 
 window.selectCategory = (category2) => {
-    category = category2
+    window.category = category2
     renderBlocksInList()
 }
