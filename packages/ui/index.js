@@ -2,7 +2,7 @@ import { root, resultProject } from "./dom.js";
 import { UIButton } from "./ui-classes.js";
 import Vm from "../vm/index.js";
 
-let category = ""
+window.category = ""
 
 const menuButton1 = new UIButton("Add block")
 
