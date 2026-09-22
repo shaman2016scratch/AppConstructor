@@ -41,7 +41,7 @@ const renderResult = () => {
     `
 }
 
-const renderBlocksInList = () => {
+window.renderBlocksInList = () => {
     switch (window.category) {
         case "dom":
             document.getElementById("block").innerHTML = `
