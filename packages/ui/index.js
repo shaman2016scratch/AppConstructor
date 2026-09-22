@@ -42,7 +42,7 @@ const renderResult = () => {
 }
 
 const renderBlocksInList = () => {
-    switch (category) {
+    switch (window.category) {
         case "dom":
             document.getElementById("block").innerHTML = `
                 <option value="dom_getBody">Get Body</option>
