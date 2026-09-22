@@ -61,6 +61,10 @@ const renderBlocksInList = () => {
                 <option value="operators_plus">Plus</option>
                 <option value="operators_minus">Minus</option>
             `
+        default:
+            document.getElementById("block").innerHTML = `
+                <option>No blocks</option>
+            `
     }
 }
 
