@@ -77,7 +77,7 @@ window.selectCategory = (category2) => {
     renderBlocksInList()
 }
 
-const.blocks = []
+const blocks = []
 
 window.addBlock = () => {
     const block = document.getElementById("block").value
