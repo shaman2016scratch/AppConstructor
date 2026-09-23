@@ -9,9 +9,9 @@ const menuButton2 = new UIButton("Save project")
 const menuButton3 = new UIButton("Package project")
 
 const menuButtons = document.createElement("div")
-menuButtons.appendChild(menuButton1)
-menuButtons.appendChild(menuButton2)
-menuButtons.appendChild(menuButton3)
+menuButtons.appendChild(menuButton1.element)
+menuButtons.appendChild(menuButton2.element)
+menuButtons.appendChild(menuButton3.element)
 
 root.innerHTML = `
     <h1 style="text-align: center">App Constructor</h1>
