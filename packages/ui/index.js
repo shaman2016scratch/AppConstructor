@@ -48,19 +48,23 @@ window.renderBlocksInList = () => {
                 <option value="dom_getBody">Get Body</option>
                 <option value="dom_createElement">Create element</option>
             `
+            break
         case "events":
             document.getElementById("block").innerHTML = `
                 <option>No blocks</option>
             `
+            break
         case "managment":
             document.getElementById("block").innerHTML = `
                 <option>No blocks</option>
             `
+            break
         case "operators":
             document.getElementById("block").innerHTML = `
                 <option value="operators_plus">Plus</option>
                 <option value="operators_minus">Minus</option>
             `
+            break
         default:
             document.getElementById("block").innerHTML = `
                 <option>No blocks</option>
