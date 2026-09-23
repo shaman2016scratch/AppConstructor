@@ -20,7 +20,7 @@ class Result {
     }
 }
 
-const resultRun
+const resultRun = new Result()
 
 export {
     Result,
