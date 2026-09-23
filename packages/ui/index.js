@@ -5,6 +5,13 @@ import Vm from "../vm/index.js";
 window.category = ""
 
 const menuButton1 = new UIButton("Add block")
+const menuButton2 = new UIButton("Save project")
+const menuButton3 = new UIButton("Package project")
+
+const menuButtons = document.createElement("div")
+menuButtons.appendChild(menuButton1)
+menuButtons.appendChild(menuButton2)
+menuButtons.appendChild(menuButton3)
 
 root.innerHTML = `
     <h1 style="text-align: center">App Constructor</h1>
@@ -18,8 +25,8 @@ root.innerHTML = `
     <p>Block: <select id="block">
         <option>Select category</option>
     </select></p>
-    ${menuButton1.toString()}<button>Save project</button><button>Package project</button
 `
+root.appendChild(menuButtons)
 
 resultProject.innerHTML = `
     <iframe src="data:text/html,<html><head></head><body>Loading</body></html>"></iframe>
@@ -75,4 +82,10 @@ window.renderBlocksInList = () => {
 window.selectCategory = (category2) => {
     window.category = category2
     renderBlocksInList()
+}
+
+const.blocks = []
+
+window.addBlock = () => {
+    const block = document.getElementById("block").value
 }
