@@ -2,6 +2,7 @@ import { root, resultProject } from "./dom.js";
 import { UIButton } from "./ui-classes.js";
 import Vm from "../vm/index.js";
 
+const vm = new Vm()
 window.category = ""
 
 const menuButton1 = new UIButton("Add block")
@@ -32,19 +33,11 @@ resultProject.innerHTML = `
     <iframe src="data:text/html,<html><head></head><body>Loading</body></html>"></iframe>
 `
 
-let result = `<html>
-    <head><title>Builded App</title></head>
-    <body>
-        <div id="root">
-            Please, enable JavaScript
-        </div>
-        <script></script> <-- Script 1 -->
-    </body>
-</html>`
+let result = vm.runningResult
 
 const renderResult = () => {
     resultProject.innerHTML = `
-        <iframe src="data:text/html,${result}"></iframe>
+        <iframe src="data:text/html,${result.result()}"></iframe>
     `
 }
 
