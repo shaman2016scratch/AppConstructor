@@ -4,10 +4,6 @@ class UIButton {
         this.element.innerHTML = label
         this.label = label
     }
-
-    toString () {
-        return `<button>${this.label}</button>`
-    }
 }
 
 export {
