@@ -5,6 +5,8 @@ import ExtensionOperators from "./src/blocks/operators.js";
 
 import ExtensionsApi from "./src/util/extensions-api.js";
 
+import runningResult from "./src/result.js"
+
 const blocks = {
     DOM: new ExtensionDOM().blocks,
     operators: new ExtensionOperators().blocks
@@ -36,6 +38,7 @@ class Vm {
         this.extensionAPI = ExtensionsAPI
         this.reporters = reporters
         this.reporterMap = reporterMap
+        this.compiledUI = runningResult
     }
 }
 
