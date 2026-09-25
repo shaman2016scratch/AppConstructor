@@ -24,5 +24,5 @@ const resultRun = new Result()
 
 export {
     Result,
-    resultRun
+    resultRun as default
 }
