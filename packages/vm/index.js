@@ -5,7 +5,7 @@ import ExtensionOperators from "./src/blocks/operators.js";
 
 import ExtensionsApi from "./src/util/extensions-api.js";
 
-import runningResult from "./src/result.js"
+import runningResult from "./result.js"
 
 const blocks = {
     DOM: new ExtensionDOM().blocks,
