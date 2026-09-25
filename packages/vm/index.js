@@ -35,7 +35,7 @@ class Vm {
             dom: ExtensionDOM,
             operators: ExtensionOperators
         }
-        this.extensionAPI = ExtensionsAPI
+        this.extensionAPI = ExtensionsApi
         this.reporters = reporters
         this.reporterMap = reporterMap
         this.compiledUI = runningResult
