@@ -1,8 +1,7 @@
 import { root, resultProject } from "./dom.js";
 import { UIButton } from "./ui-classes.js";
-import Vm from "../vm/index.js";
+import vm from "./src/vm.js";
 
-const vm = new Vm()
 window.category = ""
 
 const menuButton1 = new UIButton("Add block")
