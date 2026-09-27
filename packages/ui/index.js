@@ -81,4 +81,7 @@ const blocks = []
 
 window.addBlock = () => {
     const block = document.getElementById("block").value
+    let blockObj = vm.blockDefaultObject
+    blockObj.id = block
+    blocks.push(blockObj)
 }
