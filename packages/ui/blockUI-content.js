@@ -1,1 +1,5 @@
-import Vm from "../vm/index.js"
+import vm from "./src/vm.js";
+
+const blockUIContent = {}
+
+export default blockUIContent
