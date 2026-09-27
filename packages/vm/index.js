@@ -26,6 +26,11 @@ const blockMap = {
 
 const reporterMap = {}
 
+const blockDefaultObject = {
+    id: "",
+    values: []
+}
+
 class Vm {
     constructor () {
         this.DomElement = DomElement
@@ -39,6 +44,7 @@ class Vm {
         this.reporters = reporters
         this.reporterMap = reporterMap
         this.compiledUI = runningResult
+        this.blockDefaultObject = blockDefaultObject
     }
 }
 
