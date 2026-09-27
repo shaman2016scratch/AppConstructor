@@ -28,7 +28,7 @@ const reporterMap = {}
 
 const blockDefaultObject = {
     id: "",
-    values: []
+    values: {}
 }
 
 class Vm {
