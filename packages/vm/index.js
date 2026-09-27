@@ -31,6 +31,23 @@ const blockDefaultObject = {
     values: {}
 }
 
+const inputTypes = [
+    "reporter",
+    "string",
+    "number",
+    "boolean"
+]
+
+const inputDefaultObject = {
+    type: "",
+    value: "" // value for reporters - reporterDefaultObject
+}
+
+const reporterDefaultObject = {
+    id: "",
+    values: {}
+}
+
 class Vm {
     constructor () {
         this.DomElement = DomElement
@@ -45,6 +62,9 @@ class Vm {
         this.reporterMap = reporterMap
         this.compiledUI = runningResult
         this.blockDefaultObject = blockDefaultObject
+        this.inputTypes = inputTypes
+        this.inputDefaultObject = inputDefaultObject
+        this.reporterDefaultObject = reporterDefaultObject
     }
 }
 
