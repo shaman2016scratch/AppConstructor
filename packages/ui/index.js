@@ -1,7 +1,7 @@
 import { root, resultProject } from "./dom.js";
 import { UIButton } from "./ui-classes.js";
 import vm from "./src/vm.js";
-import BlockUIContent from "./blockUI.js"
+import BlockUIContent from "./blockUI-content.js"
 
 window.category = ""
 
